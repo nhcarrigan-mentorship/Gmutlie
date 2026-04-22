@@ -1,0 +1,253 @@
+.page {
+  min-height: calc(100vh - 64px);
+  background: linear-gradient(180deg, #faf5ff 0%, #ede9fe 100%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3rem 1.25rem;
+  box-sizing: border-box;
+}
+
+.formWrap {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 32px rgba(109, 40, 217, 0.12);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 680px;
+}
+
+.formHeader {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.9rem;
+  font-weight: 900;
+  color: #1e1b4b;
+  margin: 0 0 0.5rem 0;
+}
+
+.sub {
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e1b4b;
+}
+
+.required {
+  color: #ef4444;
+}
+
+.optional {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+/* Category radio grid */
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  gap: 0.75rem;
+}
+
+.hiddenRadio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.categoryOpt {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f5f3ff;
+  border: 2px solid #ede9fe;
+  border-radius: 12px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  position: relative;
+}
+
+.categoryOpt:hover {
+  border-color: #c4b5fd;
+  background: #ede9fe;
+}
+
+.categoryOptSelected {
+  border-color: #7c3aed;
+  background: #ede9fe;
+}
+
+.catEmoji {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.catLabel {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #4c1d95;
+  line-height: 1.25;
+}
+
+/* Inputs */
+.input,
+.textarea {
+  width: 100%;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #111827;
+  background: #fafafa;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.12);
+  background: #fff;
+}
+
+.inputError {
+  border-color: #ef4444;
+}
+
+.charCount {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  text-align: right;
+}
+
+.error {
+  font-size: 0.82rem;
+  color: #ef4444;
+  margin: 0;
+}
+
+.anonymousNote {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  color: #166534;
+  line-height: 1.5;
+}
+
+.submitBtn {
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.9rem 2rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 16px rgba(109, 40, 217, 0.3);
+  align-self: center;
+}
+
+.submitBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(109, 40, 217, 0.4);
+}
+
+/* Success */
+.successBox {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 32px rgba(109, 40, 217, 0.12);
+  padding: 3rem 2.5rem;
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.successIcon {
+  font-size: 3.5rem;
+}
+
+.successTitle {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #1e1b4b;
+  margin: 0;
+}
+
+.successDesc {
+  color: #6b7280;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.successActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.btnPrimary {
+  background: linear-gradient(135deg, #6d28d9, #7c3aed);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btnPrimary:hover {
+  transform: translateY(-2px);
+}
+
+.btnSecondary {
+  background: #f5f3ff;
+  color: #6d28d9;
+  border: 2px solid #ede9fe;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btnSecondary:hover {
+  background: #ede9fe;
+}

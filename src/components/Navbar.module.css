@@ -1,0 +1,78 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #6b21a8 0%, #7c3aed 100%);
+  box-shadow: 0 2px 12px rgba(107, 33, 168, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.6rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.link:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  .link {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.75rem;
+  }
+}

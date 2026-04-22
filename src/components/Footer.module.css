@@ -1,0 +1,28 @@
+.footer {
+  background: linear-gradient(135deg, #3b0764 0%, #4c1d95 100%);
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  padding: 2rem 1.5rem;
+  margin-top: auto;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem 0;
+  color: #e9d5ff;
+}
+
+.note {
+  font-size: 0.8rem;
+  max-width: 560px;
+  margin: 0 auto 0.75rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.copy {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+}
